@@ -624,6 +624,10 @@
     padding: 0 16px;
   }
 
+  .heroImage {
+    object-position: 60% center;
+  }
+
   .heroTitle {
     font-size: 1.6rem;
     letter-spacing: 0.1em;

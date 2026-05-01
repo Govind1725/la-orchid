@@ -1474,6 +1474,10 @@
     padding-bottom: 240px;
   }
 
+  .heroImage {
+    object-position: 60% center;
+  }
+
   .bookingSearchWrapper {
     width: 96%;
     bottom: 16px;
