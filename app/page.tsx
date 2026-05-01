@@ -60,9 +60,11 @@ const dining = [{ title: 'Restaurant' }];
 const general = [{ title: 'Parking' }, { title: 'Security' }, { title: 'Elevator' }];
 
 const testimonials = [
-  { name: 'Sarah Mitchell', role: 'Guest', text: 'Wonderful experience!', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80' },
-  { name: 'James Anderson', role: 'Guest', text: 'Highly recommended.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80' },
-  { name: 'Emily Chen', role: 'Guest', text: 'Exceptional service.', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80' },
+  { name: 'Guest', role: 'Verified Guest', text: 'Excellent stay. Comfortable clean room. Room service deserves mention as the food was very tasty.', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80' },
+  { name: 'P', role: 'Frequent Traveler', text: 'The property has been my default choice. Maintenance of the rooms is a big plus in addition to prompt service. A highly recommendable property.', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80' },
+  { name: 'Kalyanam', role: 'Verified Guest', text: 'Neat and clean, well maintained hotel as well as restaurant. Staff all are so humble. Location wise also good.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80' },
+  { name: 'Chandrakant', role: 'Verified Guest', text: 'Good rooms. Service is quick.', image: 'https://images.unsplash.com/photo-1500648767791-00bcc44559d9?w=200&q=80' },
+  { name: 'M A', role: 'Verified Guest', text: 'Beautifully kept facility.', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80' },
 ];
 
 export default function Home() {
