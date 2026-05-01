@@ -256,11 +256,19 @@
 
   .contactInfo {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align left but keep centered as a block if possible */
     gap: 24px;
-    text-align: center;
-    padding: 40px 0;
+    text-align: left;
+    padding: 40px 24px;
     margin-top: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contactItem {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
@@ -333,14 +341,18 @@
   }
 
   .contactInfo {
-    padding: 32px 0;
+    padding: 32px 16px;
     margin-top: 32px;
-    gap: 18px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .contactItem {
-    font-size: 0.8rem;
-    gap: 10px;
+    font-size: 0.85rem;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
   }
 
   .contactIcon {
