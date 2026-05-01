@@ -614,9 +614,11 @@
   margin-bottom: 30px;
 }
 
-.restaurantContent .primaryBtn {
-  display: inline-flex;
-}
+  .restaurantContent .primaryBtn {
+    white-space: nowrap;
+    width: auto;
+    justify-content: flex-start;
+  }
 
 .restaurantGallery {
   display: grid;
@@ -1475,7 +1477,7 @@
   }
 
   .heroImage {
-    object-position: 60% center;
+    object-position: 75% center;
   }
 
   .bookingSearchWrapper {
@@ -1540,6 +1542,12 @@
     font-size: 0.8rem;
     width: 100%;
     justify-content: center;
+  }
+
+  .restaurantContent .primaryBtn {
+    width: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
   }
 
   .restaurantGrid {
