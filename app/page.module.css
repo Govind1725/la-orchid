@@ -246,13 +246,15 @@
 .datepickerWrapper .react-datepicker {
   border: none;
   border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   font-family: 'Inter', sans-serif;
   overflow: hidden;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .datepickerWrapper .react-datepicker__header {
-  background: var(--color-surface);
+  background: var(--color-surface-light);
   border-bottom: 1px solid var(--color-border);
   padding: 16px;
 }
@@ -264,7 +266,7 @@
 }
 
 .datepickerWrapper .react-datepicker__day-name {
-  color: var(--color-text-muted);
+  color: var(--color-accent);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -278,12 +280,24 @@
 
 .datepickerWrapper .react-datepicker__day:hover {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-background);
 }
 
 .datepickerWrapper .react-datepicker__day--selected {
   background: var(--color-accent);
-  color: white;
+  color: var(--color-background);
+  font-weight: 700;
+}
+
+.datepickerWrapper .react-datepicker__day--today {
+  background: var(--color-brand-subtle);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.datepickerWrapper .react-datepicker__day--today:hover {
+  background: var(--color-accent);
+  color: var(--color-background);
 }
 
 .datepickerWrapper .react-datepicker__day--disabled {
@@ -292,12 +306,21 @@
   cursor: not-allowed;
 }
 
+.datepickerWrapper .react-datepicker__day--outside-month {
+  color: var(--color-text-muted);
+  opacity: 0.4;
+}
+
 .datepickerWrapper .react-datepicker__navigation {
   top: 16px;
 }
 
 .datepickerWrapper .react-datepicker__navigation-icon::before {
   border-color: var(--color-accent);
+}
+
+.datepickerWrapper .react-datepicker__triangle {
+  display: none;
 }
 
 .calendar {
@@ -1439,5 +1462,242 @@
 
   .scrollIndicator {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px 12px;
+  }
+
+  .hero {
+    padding-bottom: 240px;
+  }
+
+  .bookingSearchWrapper {
+    width: 96%;
+    bottom: 16px;
+  }
+
+  .bookingSearchBox {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .searchField {
+    flex: 1 1 100%;
+    padding: 12px 14px;
+  }
+
+  .searchBtn {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
+
+  .sectionDescription {
+    font-size: 0.9rem;
+  }
+
+  .roomsSection,
+  .restaurantSection,
+  .momentsSection,
+  .banquetSection,
+  .aboutSection,
+  .whyChooseSection,
+  .contactSection,
+  .testimonialsSection {
+    padding: 50px 0;
+  }
+
+  .roomsGrid {
+    gap: 30px;
+  }
+
+  .roomImageShowcase {
+    height: 250px;
+    border-radius: 12px;
+  }
+
+  .roomsContent .sectionDescription {
+    margin-bottom: 24px;
+  }
+
+  .primaryBtn {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .restaurantGrid {
+    gap: 40px;
+  }
+
+  .restaurantContent .sectionDescription {
+    margin-bottom: 24px;
+  }
+
+  .restaurantGallery {
+    gap: 12px;
+  }
+
+  .restaurantGallery .galleryCard:first-child {
+    height: 220px;
+  }
+
+  .restaurantGallery .galleryCard {
+    height: 180px;
+  }
+
+  .momentsGrid {
+    gap: 12px;
+  }
+
+  .banquetFeatures {
+    gap: 16px;
+  }
+
+  .banquetFeature {
+    padding: 28px 16px;
+  }
+
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  .bookingBtn {
+    padding: 14px 28px;
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .aboutGrid {
+    gap: 30px;
+  }
+
+  .aboutImageContainer {
+    height: 220px;
+    min-height: auto;
+  }
+
+  .aboutFeatures {
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .aboutFeature {
+    gap: 12px;
+  }
+
+  .aboutFeature h4 {
+    font-size: 0.9rem;
+  }
+
+  .aboutFeature p {
+    font-size: 0.85rem;
+  }
+
+  .whyChooseGrid {
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .whyChooseCard {
+    padding: 24px 18px;
+  }
+
+  .whyChooseIcon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .whyChooseCard h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+
+  .whyChooseCard p {
+    font-size: 0.85rem;
+  }
+
+  .contactGrid {
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .mapContainer {
+    height: 250px;
+    min-height: auto;
+    border-radius: 10px;
+  }
+
+  .contactInfo,
+  .contactForm {
+    padding: 24px 18px;
+    border-radius: 10px;
+  }
+
+  .contactBusinessName {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+
+  .contactDetails {
+    gap: 16px;
+  }
+
+  .contactItem {
+    font-size: 0.85rem;
+    gap: 12px;
+  }
+
+  .formRow {
+    gap: 16px;
+  }
+
+  .formInput,
+  .formTextarea {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+  }
+
+  .submitBtn {
+    padding: 14px 24px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .testimonialsGrid {
+    gap: 16px;
+  }
+
+  .testimonialCard {
+    padding: 24px;
+  }
+
+  .testimonialImage {
+    width: 44px;
+    height: 44px;
+  }
+
+  .testimonialText {
+    font-size: 0.85rem;
+  }
+
+  .datepickerWrapper .react-datepicker {
+    font-size: 0.85rem;
   }
 }

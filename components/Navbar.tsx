@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Star } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 const navLinks = [
@@ -34,11 +35,10 @@ export default function Navbar() {
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
           <div className={styles.logoIcon}>
-            <Star className={styles.star} />
+            <Image src="/la_orchid_raw.png" alt="La Orchid" width={60} height={100} className={styles.logoImageCropped} priority />
           </div>
           <div className={styles.logoText}>
             <span className={styles.logoName}>La Orchid</span>
-            <span className={styles.logoTagline}>Feel the Bless</span>
           </div>
         </Link>
 

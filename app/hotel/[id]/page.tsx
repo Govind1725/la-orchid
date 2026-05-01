@@ -6,58 +6,58 @@ import styles from '../page.module.css';
 const rooms = [
   {
     id: 'deluxe',
-    name: 'Deluxe Room',
-    type: 'Deluxe',
-    price: 250,
-    size: '45 sqm',
+    name: 'Standard Room',
+    type: 'Standard',
+    price: 4000,
+    size: '25 sqm',
     guests: 2,
-    description: 'Elegant comfort with panoramic city views, featuring contemporary design and premium amenities for a memorable stay.',
-    longDescription: 'Experience the perfect blend of elegance and comfort in our Deluxe Room. With panoramic city views and contemporary design, this room offers a sophisticated retreat for discerning travelers. Each detail has been carefully curated to ensure your stay is nothing short of exceptional.',
+    description: 'Elegant comfort with all essential amenities, featuring contemporary design for a comfortable and memorable stay.',
+    longDescription: 'Experience the perfect blend of elegance and comfort in our Standard Room. With all essential amenities and contemporary design, this room offers a comfortable retreat for every traveler. Each detail has been carefully curated to ensure your stay is nothing short of exceptional.',
     features: ['City View', 'King Bed', 'Rain Shower', 'Work Desk', 'Mini Bar', 'Safe', 'Premium Toiletries', '24/7 Room Service', 'Smart TV', 'Blackout Curtains'],
     amenities: [
       { icon: Wifi, label: 'Free WiFi' },
       { icon: Coffee, label: 'Coffee Maker' },
-      { icon: UserCheck, label: 'Butler Service' },
+      { icon: UserCheck, label: '24/7 Service' },
       { icon: Sparkles, label: 'Daily Housekeeping' },
     ],
     images: [
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_31_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_9_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_34_.jpg',
     ],
   },
   {
     id: 'executive',
     name: 'Executive Room',
     type: 'Executive',
-    price: 380,
-    size: '65 sqm',
+    price: 4500,
+    size: '35 sqm',
     guests: 2,
-    description: 'Sophisticated luxury for the discerning traveler, with expanded living space and exclusive executive lounge access.',
-    longDescription: 'Elevate your stay in our Executive Room, designed for the sophisticated traveler. Enjoy expanded living space, exclusive executive lounge access, and premium amenities. This room combines luxury with functionality, perfect for both business and leisure travelers.',
-    features: ['Lounge Access', 'King Bed', 'Bathtub', 'Living Area', 'Butler Service', 'Premium Bar', 'Work Station', 'Meeting Table', 'Executive Lounge', 'Complimentary Breakfast'],
+    description: 'Sophisticated luxury for the discerning traveler, with expanded living space and premium amenities for a refined experience.',
+    longDescription: 'Elevate your stay in our Executive Room, designed for the sophisticated traveler. Enjoy expanded living space and premium amenities. This room combines luxury with functionality, perfect for both business and leisure travelers.',
+    features: ['King Bed', 'Bathtub', 'Living Area', 'Premium Bar', 'Complimentary Breakfast', 'Work Station', 'Mini Bar', 'Smart TV', 'Blackout Curtains', 'Premium Toiletries'],
     amenities: [
       { icon: Wifi, label: 'Free WiFi' },
-      { icon: Coffee, label: 'Espresso Machine' },
-      { icon: UserCheck, label: 'Butler Service' },
+      { icon: Coffee, label: 'Coffee Maker' },
+      { icon: UserCheck, label: '24/7 Service' },
       { icon: Sparkles, label: 'Turndown Service' },
     ],
     images: [
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_1_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_2_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_5_.jpg',
     ],
   },
   {
     id: 'suite',
     name: 'Suite Room',
     type: 'Suite',
-    price: 550,
-    size: '95 sqm',
+    price: 6000,
+    size: '45 sqm',
     guests: 3,
-    description: 'Ultimate indulgence with separate living and dining areas, private balcony, and dedicated butler service for an unparalleled experience.',
-    longDescription: 'Indulge in the ultimate luxury experience in our Suite Room. With separate living and dining areas, a private balcony, and dedicated butler service, this suite offers an unparalleled experience of opulence. Perfect for those seeking the very best in hospitality.',
-    features: ['Balcony', 'Dining Area', 'Butler Service', 'Jacuzzi', 'Kitchenette', 'Grand Piano', 'Private Terrace', 'Walk-in Closet', 'Fireplace', 'Personal Chef Available'],
+    description: 'Ultimate indulgence with separate living and dining areas, and dedicated butler service for an unparalleled experience.',
+    longDescription: 'Indulge in the ultimate luxury experience in our Suite Room. With separate living and dining areas and dedicated butler service, this suite offers an unparalleled experience of opulence. Perfect for those seeking the very best in hospitality.',
+    features: ['Balcony', 'Dining Area', 'Butler Service', 'Jacuzzi', 'Kitchenette', 'Private Terrace', 'Walk-in Closet', 'Smart TV', 'Premium Minibar', 'Luxury Toiletries'],
     amenities: [
       { icon: Wifi, label: 'Free WiFi' },
       { icon: Coffee, label: 'Premium Coffee' },
@@ -65,9 +65,9 @@ const rooms = [
       { icon: Waves, label: 'Jacuzzi Access' },
     ],
     images: [
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_24_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_20_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_25_.jpg',
     ],
   },
 ];
@@ -155,7 +155,7 @@ export default async function RoomDetailPage({ params }: { params: Promise<{ id:
             <div className={styles.roomBookingCard}>
               <div className={styles.bookingHeader}>
                 <div className={styles.priceInfo}>
-                  <span className={styles.priceAmount}>${room.price}</span>
+                  <span className={styles.priceAmount}>₹{room.price}</span>
                   <span className={styles.priceUnit}>/night</span>
                 </div>
                 <div className={styles.bookingRating}>

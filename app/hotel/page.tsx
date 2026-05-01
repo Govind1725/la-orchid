@@ -8,47 +8,47 @@ import styles from './page.module.css';
 const rooms = [
   {
     id: 'deluxe',
-    name: 'Deluxe Room',
-    type: 'Deluxe',
-    price: 250,
-    size: '45 sqm',
+    name: 'Standard Room',
+    type: 'Standard',
+    price: 4000,
+    size: '25 sqm',
     guests: 2,
-    description: 'Elegant comfort with panoramic city views, featuring contemporary design and premium amenities for a memorable stay.',
+    description: 'Elegant comfort with all essential amenities, featuring contemporary design for a comfortable and memorable stay.',
     features: ['City View', 'King Bed', 'Rain Shower', 'Work Desk', 'Mini Bar', 'Safe'],
     images: [
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_31_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_9_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_34_.jpg',
     ],
   },
   {
     id: 'executive',
     name: 'Executive Room',
     type: 'Executive',
-    price: 380,
-    size: '65 sqm',
+    price: 4500,
+    size: '35 sqm',
     guests: 2,
-    description: 'Sophisticated luxury for the discerning traveler, with expanded living space and exclusive executive lounge access.',
-    features: ['Lounge Access', 'King Bed', 'Bathtub', 'Living Area', 'Butler Service', 'Premium Bar'],
+    description: 'Sophisticated luxury for the discerning traveler, with expanded living space and premium amenities for a refined experience.',
+    features: ['King Bed', 'Bathtub', 'Living Area', 'Premium Bar', 'Complimentary Breakfast', 'Work Station'],
     images: [
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_1_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_2_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_5_.jpg',
     ],
   },
   {
     id: 'suite',
     name: 'Suite Room',
     type: 'Suite',
-    price: 550,
-    size: '95 sqm',
+    price: 6000,
+    size: '45 sqm',
     guests: 3,
-    description: 'Ultimate indulgence with separate living and dining areas, private balcony, and dedicated butler service for an unparalleled experience.',
-    features: ['Balcony', 'Dining Area', 'Butler Service', 'Jacuzzi', 'Kitchenette', 'Grand Piano'],
+    description: 'Ultimate indulgence with separate living and dining areas, and dedicated butler service for an unparalleled experience.',
+    features: ['Balcony', 'Dining Area', 'Butler Service', 'Jacuzzi', 'Kitchenette', 'Private Terrace'],
     images: [
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80',
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80',
+      '/suite_room.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_20_.jpg',
+      'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_25_.jpg',
     ],
   },
 ];
@@ -64,40 +64,34 @@ const hotelServices = [
 
 const hotelTestimonials = [
   {
-    name: 'Michael Roberts',
-    role: 'Frequent Traveler',
-    text: 'The Executive Room exceeded all expectations. The attention to detail is remarkable.',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
-  },
-  {
-    name: 'Jennifer Lee',
-    role: 'Business Executive',
-    text: 'Perfect for business trips. The workspace and connectivity are impeccable.',
+    name: 'Guest',
+    role: 'Verified Guest',
+    text: 'Excellent stay. Comfortable clean room. Room service deserves mention as the food was very tasty.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
   },
   {
-    name: 'David Chen',
-    role: 'Wedding Guest',
-    text: 'Our wedding at La Orchid was magical. The banquet hall was stunning and the service exceptional.',
+    name: 'P',
+    role: 'Frequent Traveler',
+    text: 'The property has been my default choice. Maintenance of the rooms is a big plus in addition to prompt service. A highly recommendable property.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
+  },
+  {
+    name: 'Kalyanam',
+    role: 'Verified Guest',
+    text: 'Neat and clean, well maintained hotel as well as restaurant. Staff all are so humble. Location wise also good.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
   },
   {
-    name: 'Sarah Williams',
-    role: 'Food Blogger',
-    text: 'The finest dining experience I have ever had. Every dish is a masterpiece of flavor and presentation.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
-  },
-  {
-    name: 'James Peterson',
-    role: 'CEO',
-    text: 'Outstanding hospitality and world-class amenities. La Orchid sets the standard for luxury stays.',
+    name: 'Chandrakant',
+    role: 'Verified Guest',
+    text: 'Good rooms. Service is quick.',
     image: 'https://images.unsplash.com/photo-1500648767791-00bcc44559d9?w=200&q=80',
   },
   {
-    name: 'Emily Taylor',
-    role: 'Honeymooner',
-    text: 'The perfect honeymoon destination. Romantic, private, and utterly luxurious experience.',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80',
+    name: 'M A',
+    role: 'Verified Guest',
+    text: 'Beautifully kept facility.',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
   },
 ];
 
@@ -250,10 +244,10 @@ export default function HotelPage() {
 
           <div className={styles.virtualTourGrid}>
             {[
-              { title: 'Grand Lobby', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80' },
-              { title: 'Deluxe Suite', image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80' },
-              { title: 'Infinity Pool', image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80' },
-              { title: 'Fine Dining', image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80' },
+              { title: 'Grand Lobby', image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_1_.jpg' },
+              { title: 'Oak Room', image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_24_.jpg' },
+              { title: 'Banquet Hall', image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_6_.jpg' },
+              { title: 'Dining Area', image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_14_.jpg' },
             ].map((space, index) => (
               <motion.div
                 key={index}
@@ -314,7 +308,7 @@ export default function HotelPage() {
                       <Star key={i} size={14} fill="#2BBCCC" color="#2BBCCC" />
                     ))}
                   </div>
-                  <p className={styles.testimonialText}>"{testimonial.text}"</p>
+                  <p className={styles.testimonialText}>&quot;{testimonial.text}&quot;</p>
                   <h4 className={styles.testimonialName}>{testimonial.name}</h4>
                   <span className={styles.testimonialRole}>{testimonial.role}</span>
                 </div>

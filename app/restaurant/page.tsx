@@ -73,30 +73,30 @@ const diningSpaces = [
     id: 'family',
     name: 'Family Dining',
     description: 'Warm and inviting space perfect for family gatherings',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_14_.jpg',
     capacity: 'Up to 12 guests',
   },
   {
     id: 'private',
     name: 'Private Dining',
     description: 'Exclusive room for intimate celebrations and business dinners',
-    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_12_.jpg',
     capacity: 'Up to 8 guests',
   },
   {
     id: 'rooftop',
     name: 'Rooftop Dining',
     description: 'Al fresco dining with stunning city skyline views',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_8_.jpg',
     capacity: 'Up to 20 guests',
   },
 ];
 
 const ambienceImages = [
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
-  'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80',
-  'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-  'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80',
+  'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_14_.jpg',
+  'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_12_.jpg',
+  'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_8_.jpg',
+  'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_13_.jpg',
 ];
 
 const restaurantTestimonials = [
@@ -354,7 +354,7 @@ export default function RestaurantPage() {
                       <Star key={i} size={14} fill="#2BBCCC" color="#2BBCCC" />
                     ))}
                   </div>
-                  <p className={styles.testimonialText}>"{testimonial.text}"</p>
+                  <p className={styles.testimonialText}>&quot;{testimonial.text}&quot;</p>
                   <h4 className={styles.testimonialName}>{testimonial.name}</h4>
                   <span className={styles.testimonialRole}>{testimonial.role}</span>
                 </div>

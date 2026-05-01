@@ -49,7 +49,7 @@
 }
 
 .heroTitle {
-  font-family: 'Cinzel', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 400;
   color: white;
@@ -727,7 +727,7 @@
   }
 }
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
    .container {
      padding: 0 24px;
    }
@@ -779,7 +779,268 @@
      width: 100%;
      justify-content: center;
    }
+
+   .sectionHeader {
+     margin-bottom: 50px;
+   }
+
+   .roomImageWrapper {
+     height: 250px;
+   }
+
+   .roomContent {
+     padding: 20px;
+   }
+
+   .roomName {
+     font-size: 1.3rem;
+   }
+
+   .priceAmount {
+     font-size: 1.2rem;
+   }
+
+   .roomMeta {
+     gap: 16px;
+   }
+
+   .serviceCard {
+     padding: 28px 16px;
+   }
+
+   .serviceIcon {
+     width: 50px;
+     height: 50px;
+     margin-bottom: 16px;
+   }
+
+   .tourCard {
+     height: 220px;
+   }
+
+   .testimonialCard {
+     padding: 24px;
+     gap: 16px;
+   }
+
+   .testimonialImage {
+     width: 56px;
+     height: 56px;
+   }
  }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .heroTitle {
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .heroSubtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+  }
+
+  .heroDescription {
+    font-size: 0.9rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+  }
+
+  .sectionDescription {
+    font-size: 0.9rem;
+  }
+
+  .roomsSection,
+  .servicesSection,
+  .testimonialsSection,
+  .virtualTourSection {
+    padding: 60px 0;
+  }
+
+  .sectionHeader {
+    margin-bottom: 36px;
+  }
+
+  .roomGrid {
+    gap: 20px;
+  }
+
+  .roomImageWrapper {
+    height: 200px;
+  }
+
+  .roomContent {
+    padding: 16px;
+  }
+
+  .roomHeader {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .roomName {
+    font-size: 1.15rem;
+  }
+
+  .roomPrice {
+    text-align: left;
+  }
+
+  .priceAmount {
+    font-size: 1.1rem;
+  }
+
+  .roomDescription {
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+
+  .roomMeta {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .roomMeta span {
+    font-size: 0.8rem;
+  }
+
+  .roomFeatures {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .featureTag {
+    padding: 4px 10px;
+    font-size: 0.7rem;
+  }
+
+  .viewRoomBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .serviceCard {
+    padding: 24px 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .serviceIcon {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .virtualTourGrid {
+    gap: 16px;
+  }
+
+  .tourCard {
+    height: 180px;
+  }
+
+  .tourContent {
+    padding: 14px;
+    font-size: 0.8rem;
+  }
+
+  .playButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .playButton svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .testimonialsGrid {
+    gap: 16px;
+  }
+
+  .testimonialCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .testimonialStars {
+    justify-content: center;
+  }
+
+  .testimonialText {
+    font-size: 0.85rem;
+  }
+
+  .testimonialName {
+    font-size: 0.9rem;
+  }
+
+  .modal {
+    padding: 12px;
+  }
+
+  .modalContent {
+    border-radius: 8px;
+  }
+
+  .modalGallery {
+    min-height: 200px;
+  }
+
+  .modalInfo {
+    padding: 20px 16px;
+  }
+
+  .modalTitle {
+    font-size: 1.4rem;
+  }
+
+  .modalDescription {
+    font-size: 0.85rem;
+  }
+
+  .metaItem {
+    font-size: 0.8rem;
+  }
+
+  .modalFeatures h4 {
+    font-size: 0.75rem;
+  }
+
+  .featureItem {
+    font-size: 0.8rem;
+  }
+
+  .priceInfo .priceAmount {
+    font-size: 1.6rem;
+  }
+
+  .bookBtn {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+  }
+}
 
 /* Room Detail Page Styles */
 .breadcrumbSection {

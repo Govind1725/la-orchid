@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState, useRef } from 'react';
 import DatePicker from 'react-datepicker';
@@ -11,24 +11,24 @@ import styles from './page.module.css';
 const roomHighlights = [
   {
     id: 1,
-    title: 'Deluxe Room',
+    title: 'Standard Room',
     description: 'Elegant comfort with city views',
-    price: 'From $250/night',
-    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80',
+    price: 'From ₹4000/night',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_31_.jpg',
   },
   {
     id: 2,
     title: 'Executive Room',
     description: 'Sophisticated luxury space',
-    price: 'From $380/night',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80',
+    price: 'From ₹4500/night',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAHOGANY/Mahogany_1_.jpg',
   },
   {
     id: 3,
     title: 'Suite Room',
     description: 'Ultimate indulgence',
-    price: 'From $550/night',
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80',
+    price: 'From ₹6000/night',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_24_.jpg',
   },
 ];
 
@@ -36,17 +36,17 @@ const restaurantHighlights = [
   {
     title: 'Fine Dining',
     description: 'Exquisite cuisine',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_12_.jpg',
   },
   {
     title: 'Ambience',
     description: 'Elegant settings',
-    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_14_.jpg',
   },
   {
     title: 'Cuisine',
     description: 'World-class flavors',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80',
+    image: 'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_8_.jpg',
   },
 ];
 
@@ -113,9 +113,9 @@ export default function Home() {
   };
 
   const momentsImages = [
-    'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
-    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-    'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80',
+    'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_1_.jpg',
+    'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_24_.jpg',
+    'https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/MAPLE/Maple_31_.jpg',
   ];
 
   return (
@@ -208,7 +208,7 @@ export default function Home() {
               <Link href="/hotel" className={styles.primaryBtn}>Explore Rooms</Link>
             </motion.div>
             <motion.div className={styles.roomImageShowcase} initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80" alt="La Orchid Hotel" />
+              <img src="https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/OAK/Oak_20_.jpg" alt="La Orchid Hotel" />
             </motion.div>
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function Home() {
            <div className={styles.aboutGrid}>
              <motion.div className={styles.aboutImageWrapper} initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                <div className={styles.aboutImageContainer}>
-                 <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80" alt="La Orchid Hotel" className={styles.aboutImage} />
+                 <img src="https://cs-images.treebo.com/Treebo_Tryst_La_Orchid/common/Common_3_.jpg" alt="La Orchid Hotel" className={styles.aboutImage} />
                  <div className={styles.imageOverlay} />
                </div>
              </motion.div>
@@ -406,16 +406,16 @@ export default function Home() {
              {/* Left - Map */}
              <motion.div className={styles.mapContainer} initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                <div className={styles.mapWrapper}>
-                 <iframe
-                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.123456789012!2d79.11091!3d10.76812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baae12345678901%3A0x1234567890abcdef!2sThanjavur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                   width="100%"
-                   height="100%"
-                   style={{ border: 0 }}
-                   allowFullScreen
-                   loading="lazy"
-                   referrerPolicy="no-referrer-when-downgrade"
-                   title="La Orchid Hotel Location"
-                 />
+                  <iframe
+                    src="https://maps.google.com/maps?q=Door+No.+102/9/163+Medical+College+Road+Neelagiri+Thanjavur+613007+India&z=16&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="La Orchid Hotel Location"
+                  />
                  <div className={styles.mapOverlay} />
                </div>
                <div className={styles.mapPin}>
@@ -431,15 +431,15 @@ export default function Home() {
                  <div className={styles.contactDetails}>
                    <div className={styles.contactItem}>
                      <MapPin size={18} />
-                     <span>123 Royal Heritage Road, Thanjavur, Tamil Nadu 613001</span>
+                      <span>Door No. 102/9/163, Medical College Road, Neelagiri, Thanjavur, India 613007</span>
                    </div>
                    <div className={styles.contactItem}>
                      <Phone size={18} />
-                     <a href="tel:+919876543210">+91 98765 43210</a>
+                      <a href="tel:+919962503757">+91 99625 03757</a>
                    </div>
                    <div className={styles.contactItem}>
                      <Mail size={18} />
-                     <a href="mailto:info@laorchid.com">info@laorchid.com</a>
+                      <a href="mailto:frontdesk@hotellaorchid.com">frontdesk@hotellaorchid.com</a>
                    </div>
                     <div className={styles.contactItem}>
                      <Clock size={18} />
@@ -483,7 +483,7 @@ export default function Home() {
             {testimonials.map((t, i) => (
               <motion.div key={i} className={styles.testimonialCard} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
                 <div className={styles.testimonialImage}><img src={t.image} alt={t.name} /></div>
-                <p className={styles.testimonialText}>"{t.text}"</p>
+                <p className={styles.testimonialText}>&quot;{t.text}&quot;</p>
                 <h4 className={styles.testimonialName}>{t.name}</h4>
                 <span className={styles.testimonialRole}>{t.role}</span>
               </motion.div>

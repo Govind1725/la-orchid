@@ -2,7 +2,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ChatWidget from "@/components/ChatWidget";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "La Orchid | Luxury Hotel & Restaurant - Feel the Bless",
@@ -20,7 +20,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <ChatWidget />
+        <WhatsAppButton />
       </body>
     </html>
   );

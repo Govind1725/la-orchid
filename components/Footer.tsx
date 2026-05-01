@@ -1,6 +1,8 @@
 'use client';
 
-import { Mail, Phone, MapPin, Star } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const SocialIcons = () => (
@@ -25,11 +27,10 @@ export default function Footer() {
           <div className={styles.brandSection}>
             <div className={styles.logo}>
               <div className={styles.logoIcon}>
-                <Star className={styles.star} />
+                <Image src="/la_orchid_raw.png" alt="La Orchid" width={60} height={100} className={styles.logoImageCropped} />
               </div>
               <div className={styles.logoText}>
                 <span className={styles.logoName}>La Orchid</span>
-                <span className={styles.logoTagline}>Feel the Bless</span>
               </div>
             </div>
             <p className={styles.description}>
@@ -41,22 +42,22 @@ export default function Footer() {
           <div className={styles.quickLinks}>
             <h3 className={styles.sectionTitle}>Quick Links</h3>
             <ul className={styles.linkList}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/hotel">Hotel</a></li>
-              <li><a href="/restaurant">Restaurant</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/hotel">Hotel</Link></li>
+              <li><Link href="/restaurant">Restaurant</Link></li>
+              <li><Link href="#">Gallery</Link></li>
+              <li><Link href="#">Contact</Link></li>
             </ul>
           </div>
 
           <div className={styles.services}>
             <h3 className={styles.sectionTitle}>Services</h3>
             <ul className={styles.linkList}>
-              <li><a href="#">Luxury Rooms</a></li>
-              <li><a href="#">Fine Dining</a></li>
-              <li><a href="#">Spa & Wellness</a></li>
-              <li><a href="#">Event Spaces</a></li>
-              <li><a href="#">Concierge</a></li>
+              <li><Link href="#">Luxury Rooms</Link></li>
+              <li><Link href="#">Fine Dining</Link></li>
+              <li><Link href="#">Spa & Wellness</Link></li>
+              <li><Link href="#">Event Spaces</Link></li>
+              <li><Link href="#">Concierge</Link></li>
             </ul>
           </div>
         </div>
@@ -64,15 +65,15 @@ export default function Footer() {
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
             <MapPin className={styles.contactIcon} />
-            <span>123 Luxury Avenue, Premium District, City 00000</span>
+            <span>Door No. 102/9/163, Medical College Road, Neelagiri, Thanjavur 613007</span>
           </div>
           <div className={styles.contactItem}>
             <Phone className={styles.contactIcon} />
-            <span>+1 234 567 890</span>
+            <span>+91 99625 03757</span>
           </div>
           <div className={styles.contactItem}>
             <Mail className={styles.contactIcon} />
-            <span>reservations@laorchid.com</span>
+            <a href="mailto:frontdesk@hotellaorchid.com">frontdesk@hotellaorchid.com</a>
           </div>
         </div>
 
